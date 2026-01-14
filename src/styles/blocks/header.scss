@@ -5,12 +5,13 @@
   justify-content: space-between;
   padding: 0 50px;
   box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.1);
-}
 
-.logo__img {
-  height: 40px;
-  width: 40px;
-  display: block;
+  &__logo {
+    height: 40px;
+    width: 40px;
+    display: block;
+  }
+
 }
 
 .nav__list {
@@ -51,3 +52,4 @@
     margin-right: 20px;
   }
 }
+

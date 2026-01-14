@@ -1,14 +1,11 @@
-  .catalog{
-    padding: 40px 50px;
+.catalog{
+  padding: 40px 50px;
 
-    display: grid;
-    grid-template-columns: repeat(4, 200);
-    row-gap: 48px;
-    column-gap: 46px;
-    justify-content: center;
-    
+  display: grid;
+  grid-template-columns: repeat(4, 200);
+  justify-content: center;
 
-    &card__number {
+  &card{
     margin-top: 32px;
     box-sizing: border-box;
     width: 200px;
@@ -95,3 +92,4 @@
     }
   }
 }
+
