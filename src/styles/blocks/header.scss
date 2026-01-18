@@ -1,32 +1,33 @@
 .header {
   height: 60px;
-  background-color: #fff;
-  align-items: center;
   display: flex;
+  align-items: center;
+  background-color: $background-color;
   justify-content: space-between;
   padding: 40px 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   &__logo {
-    height: 40px;
-    width: 40px;
     display: block;
+    width: $logo-size;
+    height: $logo-size;
   }
 }
 
 .nav__list {
   display: flex;
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 .nav__link {
-  text-transform: uppercase;
-  height: 60px;
   position: relative;
+  height: 60px;
+  text-transform: uppercase;
   color: $primary-color;
-  text-decoration: none;
   display: flex;
+  text-decoration: none;
   align-items: center;
   justify-content: center;
 
@@ -37,15 +38,15 @@
 }
 
 .is-active::after {
-  background-color: $button-color;
   content: '';
+  background-color: $button-color;
   position: absolute;
-  left: 0;
   right: 0;
+  left: 0;
   bottom: 0;
   height: 4px;
-  border-radius: 8px;
   width: 100%;
+  border-radius: 8px;
 }
 
 .nav__item:not(:last-child) {
